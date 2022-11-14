@@ -135,7 +135,7 @@ label {
     flex-direction: column;
 }
 
-.submit-button {
+#submit-button {
     margin-top: 30px;
     margin-bottom: 30px;
     color: white;
@@ -189,18 +189,20 @@ input:focus {
 
 input:valid+span::after {
     position: absolute;
-    top: 25%;
-    right: -18px;
+    top: 3px;
+    right: -30px;
     content: "\2713";
-    color: green;
+    color: #5A7D43;
+    font-size: 30px;
 }
 
 input:invalid:not(:placeholder-shown)+span::after {
     position: absolute;
-    top: 20%;
-    right: -18px;
+    top: -5px;
+    right: -25px;
     content: "\10102";
     color: red;
+    font-size: 27px;
 }
 
 button:hover {
@@ -228,4 +230,10 @@ input[name="pass-confirm"] {
 
 input:focus+span+.password-instructions {
     visibility: visible;
+}
+
+#pass-message {
+    position: relative;
+    top: 24px;
+    left: -50px;
 }

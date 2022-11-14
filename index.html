@@ -101,6 +101,7 @@
                                 id="password"
                                 placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;"
                                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                                onkeyup='check();'
                                 required />
                                 <span></span>
                                 <div class="password-instructions">Password must contain at least one upper case letter, lower case<br>letter, number, and special character (minimum 8 characters)</div>
@@ -116,22 +117,52 @@
                                 id="pass-confirm"
                                 placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;"
                                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                                onkeyup='check();'
                                 required />
-                                <span></span>
-                                <div class="password-instructions">Password must contain at least one upper case letter, lower case<br>letter, number, and special character (minimum 8 characters)</div>
+                            <!-- <span></span> -->
+                            <div class="password-instructions">Password must contain at least one upper case letter, lower case<br>letter, number, and special character (minimum 8 characters)</div>
                         </div>
                     </div>
+                    <div id="pass-message"></div>
                 </div>
             </form>
         </div>
 
-        <button type="submit" form="form" class="submit-button">Create Account</button>
+        <button type="submit" form="form" id="submit-button">Create Account</button>
 
         <div class="log-in">
             Already have an account? <a href="#">Log in</a>
         </div>
     </div>
 </div>
+
+<script>
+
+    const check = function() {
+        if (!document.getElementById('pass-confirm').value) {
+            return;
+        }
+        if (document.getElementById('password').value == document.getElementById('pass-confirm').value) {
+            document.getElementById('pass-message').style.color = 'green';
+            document.getElementById('pass-message').style.fontSize = '30px';
+            document.getElementById('pass-message').style.position = 'relative';
+            document.getElementById('pass-message').style.top = '20px';
+            document.getElementById('pass-message').style.left = '-54px';            
+            document.getElementById('pass-message').innerHTML = '&#x2713';
+            document.getElementById('submit-button').disabled = false;
+        } else {
+            document.getElementById('pass-message').style.color = 'red';
+            document.getElementById('pass-message').innerHTML = 'passwords must match';
+            document.getElementById('pass-message').style.fontSize = '18px';
+            document.getElementById('pass-message').style.position = 'relative';
+            document.getElementById('pass-message').style.top = '25px';
+            document.getElementById('pass-message').style.left = '-50px';
+            document.getElementById('submit-button').disabled = true;
+            document.getElementById('pass-message').style.fontStyle = 'italic';
+        }
+}
+    
+</script>
 
 </body>
 </html>
