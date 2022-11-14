@@ -50,8 +50,8 @@ body {
 }
 
 .left-container {
-    width: 30vw;
-    background-image: url(img/bg-img.png);
+    width: 28vw;
+    background: url(img/pic7.png);
 }
 
 .left-container > div:first-child {
@@ -84,8 +84,8 @@ a {
 }
 
 .right-container {
-    width: 70vw;
-    background-color: #F6F8FA;
+    width: 72vw;
+    background-color: #dfdddb;
 }
 
 .hero {
@@ -139,8 +139,8 @@ label {
     margin-top: 30px;
     margin-bottom: 30px;
     color: white;
-    background-color: #5A7D43 ;
-    border: 1px solid #4c6938;
+    background-color: #807B65 ;
+    border: 1px solid #696655;
     margin-left: 60px;
     padding: 10px 25px;
     border-radius: 5px;
