@@ -37,61 +37,89 @@
                 <div class="form-row">
                     <div class="small-container">
                         <label for="first-name">FIRST NAME</label>
-                        <input
-                            type="text"
-                            name="first-name"
-                            id="first-name"
-                            placeholder="Thor"
-                            required />
+                        <div class="span-container">
+                            <input
+                                type="text"
+                                name="first-name"
+                                id="first-name"
+                                placeholder="Thor"
+                                required />
+                                <span></span>
+                        </div>
                     </div>
 
                     <div class="small-container">
                         <label for="last-name">LAST NAME</label>
-                        <input
-                            type="text"
-                            name="last-name"
-                            id="last-name"
-                            placeholder="Odinson"
-                            required />
+                        <div class="span-container">
+                            <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                placeholder="Odinson"
+                                required />
+                                <span></span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="small-container">
                         <label for="email">EMAIL</label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            required />
+                        <div class="span-container">
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="godofthunder@valhalla.com"
+                                required />
+                                <span></span>
+                        </div>
                     </div>
 
                     <div class="small-container">
                         <Label for="phone">PHONE</Label>
-                        <input
-                            type="tel"
-                            name="phone"
-                            id="phone" />
+                        <div class="span-container">
+                            <input
+                                type="tel"
+                                name="phone"
+                                id="phone"
+                                placeholder="386-867-5309"
+                                pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$""
+                                required />
+                                <span></span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="small-container">
                         <label for="password">PASSWORD</label>
-                        <input
-                            type="password"
-                            name="password"
-                            id="password"
-                            required />
+                        <div class="span-container">
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                                placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                                required />
+                                <span></span>
+                                <div class="password-instructions">Password must contain at least one upper case letter, lower case<br>letter, number, and special character (minimum 8 characters)</div>
+                        </div>
                     </div>
 
                     <div class="small-container">
                         <label for="pass-confirm">CONFIRM PASSWORD</label>
-                        <input
-                            type="password"
-                            name="pass-confirm"
-                            id="pass-confirm"
-                            required />
+                        <div class="span-container">
+                            <input
+                                type="password"
+                                name="pass-confirm"
+                                id="pass-confirm"
+                                placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                                required />
+                                <span></span>
+                                <div class="password-instructions">Password must contain at least one upper case letter, lower case<br>letter, number, and special character (minimum 8 characters)</div>
+                        </div>
                     </div>
                 </div>
             </form>
