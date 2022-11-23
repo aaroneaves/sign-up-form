@@ -51,7 +51,7 @@ body {
 
 .left-container {
     width: 28vw;
-    background: url(img/pic7.png);
+    background: url(img/background.png);
 }
 
 .left-container > div:first-child {
@@ -91,7 +91,7 @@ a {
 .hero {
     font-weight: bold;
     margin-left: 60px;
-    margin-top: 20vh;
+    margin-top: 17vh;
     margin-bottom: 58px;
     width: 35vw;
     font-size: 25px;
